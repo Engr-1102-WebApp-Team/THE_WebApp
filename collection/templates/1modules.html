@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    	Modules - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+	<h1>SELECT MODULE BELOW</h1>
+	<div id="Div" name="Div" title="Div Element " style="color: rgb(255, 255, 255);">	
+		<form>
+    			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="HTML/CSS" onclick="window.location.href='{% url '2HTMLCSS' %}'" />
+			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="JAVASCRIPT" onclick="window.location.href='{% url '2JAVASCRIPT' %}'" />
+        		<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="PYTHON" onclick="window.location.href='{% url '2PYTHON' %}'" />
+			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="NEW" onclick="window.location.href='{% url '2NEW' %}'" />
+			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="NEW" onclick="window.location.href='{% url '2NEW' %}'" />
+			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="NEW" onclick="window.location.href='{% url '2NEW' %}'" />
+		</form>	
+{% endblock content %}

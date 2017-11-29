@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!doctype html>
+
+<html>
+    	<head>
+        	<title>            		
+			{% block title %}
+				ENGR 1102: Introduction to Engineering Problem Solving!
+			{% endblock title %}
+        	</title>
+        		<link rel="stylesheet" href="{% static 'css/style.css' %}" />        		
+			{% block header %}
+			{% endblock header %}
+    	</head>
+    	<body>
+		<header>
+	    		<h1>
+				ENGR 1102: INTRODUCTION TO ENGINEERING PROBLEM SOLVING!
+			</h1>
+                	<nav>
+             			<form>
+			    		<input style="width: 473px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="HOME" onclick="window.location.href='{% url 'home' %}'" />
+			    		<input style="width: 473px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="COURSE INFO" onclick="window.location.href='{% url '1courseinfo' %}'" />
+                    	    		<input style="width: 473px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="MODULES" onclick="window.location.href='{% url '1modules' %}'" />
+			    		<input style="width: 473px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: rgb(255, 255, 255); color: rgb(255, 0, 0); border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="RESOURCES" onclick="window.location.href='{% url '1resources' %}'" />
+		    		</form>	
+            		</nav>
+        	</header>
+			{% block content %}
+			{% endblock content %}
+        		{% block footer %}
+			{% endblock footer %}
+	</body>
+</html>
